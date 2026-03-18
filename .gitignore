@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Dependencies (se adicionar Node futuramente)
+node_modules/

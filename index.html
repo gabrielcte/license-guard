@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>License Guard</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="app">
+
+    <header class="header">
+      <div>
+        <h1>License Guard</h1>
+        <p class="sub">
+          <span class="status-dot"></span>
+          Proteção de licenças ativa ·
+          <span id="db-count"></span> pacotes indexados
+        </p>
+      </div>
+      <div class="header-stats">
+        <div id="allowed-count">4 tipos permitidos</div>
+        <div id="install-count">0 instalados hoje</div>
+      </div>
+    </header>
+
+    <section>
+      <p class="section-label">Política de licenças</p>
+      <div class="policy-grid" id="policy-grid"></div>
+    </section>
+
+    <section>
+      <p class="section-label">Buscar pacote</p>
+      <div class="search-row">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Ex: freecad, blender, inkscape, audacity..."
+          autocomplete="off"
+        />
+        <button id="search-btn">Buscar</button>
+      </div>
+    </section>
+
+    <div class="result-area" id="result-area">
+      <p class="empty">Digite o nome de um software para verificar a licença antes de instalar.</p>
+    </div>
+
+    <div class="log-area" id="log-area" style="display:none">
+      <p class="section-label">Histórico de instalações</p>
+      <div id="log-list"></div>
+    </div>
+
+  </div>
+
+  <script src="src/db.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
