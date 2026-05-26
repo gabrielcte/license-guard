@@ -77,4 +77,4 @@ Edite `src/db.js` e insira um objeto no array `DB`:
 
 ## Licença
 
-MIT
+GNU
